@@ -1,0 +1,18 @@
+.products{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products ul{
+    display: grid;
+     gap:1rem;
+    grid-template-columns: repeat(
+        aut-fit,
+        minmax(
+            250px,
+            1fr
+        )
+    );
+}
