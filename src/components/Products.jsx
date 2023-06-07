@@ -26,11 +26,11 @@ export function Products ({products}){
                       isProductInCart 
                       ? removeFromCart(product)
                       : addToCart(product)
-                    }}>
+                    }}> 
                        {
                         isProductInCart
                         ? <div> Remove Product</div> 
-                        : <div> AddProdu ct  </div>
+                        : <div> AddProduct  </div>
                        }
                     </button>
                    </div>

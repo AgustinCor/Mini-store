@@ -9,8 +9,8 @@ function CartItem({thumbnail,price,title, quantity,addToCart}) {
         <strong>{title}</strong> -${price}
       </div>
       <footer>
-        <small onClick={addToCart}>Qty:{quantity}</small>
-        <button>+</button>
+        <small>Qty:{quantity}</small>
+        <button onClick={addToCart}>+</button>
       </footer>
     </li>
   );
@@ -35,6 +35,7 @@ export function Cart() {
             />
           ))}
         </ul>
+        
         <button onClick={clearCart}>Cart button</button>
       </aside>
     </>
