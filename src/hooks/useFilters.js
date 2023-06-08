@@ -10,7 +10,7 @@ export function useFilters (){
           product.price >= filters.minPrice &&
           (
             filters.category === 'all' || 
-            products.category === filters.category
+            product.category === filters.category
           )
         )
       })
